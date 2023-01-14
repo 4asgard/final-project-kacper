@@ -8,16 +8,16 @@
 <body>
 
 <section layout:fragment="custom-content">
-Szczegóły użytkownika;
+<h3>Szczegóły użytkownika</h3>
 
     <p>
         Id: <span th:text="${person.id}"></span>
     </p>
     <p>
-        Username: <span th:text="${person.username}"></span><br/>
-        Email: <span th:text="${person.email}"></span><br/>
-        Enabled: <span th:text="${person.enabled}"></span><br/>
-        Role: <span th:text="${person.role}"></span><br/>
+        <label th:text="#{person.username}"></label>: <span th:text="${person.username}"></span><br/>
+        <label>e-mail:</label> <span th:text="${person.email}"></span><br/>
+        <label th:text="#{person.enabled}"></label>: <span th:text="${person.enabled}"></span><br/>
+        <label th:text="#{person.role}"></label>: <span th:text="${person.role}"></span><br/>
     </p>
 </section>
 
